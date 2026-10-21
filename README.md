@@ -24,6 +24,7 @@ If a piece fails any of these, it stays out until it earns its place.
 | `src/core/phi.ts` | Golden-ratio constants + the two identities the control surface relies on | `test/phi.test.ts`, Wolfram exact (PROVENANCE) |
 | `src/control/corridor.ts` | Confidence Corridor — bounded epistemic control; **inversion-fixed** (F18/P7) | `test/corridor.test.ts` |
 | `src/control/autoLearn.ts` | Confidence-gated decision: *when* to trigger a held-out learn() | `test/autoLearn.test.ts` |
+| `src/engine/cell.ts` | The nine-term cell update — the dynamical core; verified strict contraction (Jury gain 0.75 < 1) | `test/cell.test.ts` + `python/test_cell_gpu.py` (100k-field GPU certificate) |
 
 ## Run the tests
 
