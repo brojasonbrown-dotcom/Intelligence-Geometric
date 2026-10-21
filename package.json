@@ -1,0 +1,15 @@
+{
+  "name": "intelligence-geometric",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Proven-functional core of the Geometric Intelligence / RHUFT program. Admission rule: no module without a passing behavioural test. No dead code.",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
