@@ -25,6 +25,9 @@ If a piece fails any of these, it stays out until it earns its place.
 | `src/control/corridor.ts` | Confidence Corridor — bounded epistemic control; **inversion-fixed** (F18/P7) | `test/corridor.test.ts` |
 | `src/control/autoLearn.ts` | Confidence-gated decision: *when* to trigger a held-out learn() | `test/autoLearn.test.ts` |
 | `src/engine/cell.ts` | The nine-term cell update — the dynamical core; verified strict contraction (Jury gain 0.75 < 1) | `test/cell.test.ts` + `python/test_cell_gpu.py` (100k-field GPU certificate) |
+| `python/opf/zero_potential.py` | RHUFT "zero function" — the charged void (Higgs + flipped-log) and the M3a structural null | `python/test_opf_structures.py` |
+| `python/opf/mass_mechanism.py` | Why ρ cannot carry mass (Lagrange multiplier) and r does: m_r² = 2χ₀/μ_g | `python/test_opf_structures.py` |
+| `python/opf/measurement_oscillation.py` | Closure-gap map ρ→(3/2)sin ρ: convergent oscillation, not a mass gap | `python/test_opf_structures.py` |
 
 ## Run the tests
 
@@ -44,4 +47,10 @@ GPU-scale property test (uses the torch venv — see `python/`):
 
 ```bash
 "C:/Users/user-pc/venvs/torch/Scripts/python.exe" python/test_corridor_gpu.py
+```
+
+OPF math-structure tests (plain Python, no torch needed):
+
+```bash
+python python/test_opf_structures.py
 ```
